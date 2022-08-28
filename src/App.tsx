@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
 
 function App() {
   return (
@@ -15,13 +17,5 @@ function App() {
     </div>
   );
 };
-
-export function Page1() {
-  return <h2>Page1</h2>;
-}
-
-export function Page2() {
-  return <h2>Page2</h2>;
-}
 
 export default App;
