@@ -3,7 +3,10 @@ type Props = {
 }
 
 const Hello: React.FC<Props> = (props: Props) => {
-  return <h3>Hello, {props.message}</h3>;
+  // write the component logic
+  // API request?
+  const newMesage = `Hello, ${props.message}!!`;
+  return <h3>{newMesage}</h3>;
 }
 
 export default Hello;
