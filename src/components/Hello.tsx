@@ -9,8 +9,8 @@ const Hello: React.FC<Props> = (props: Props) => {
     { name: "honyanya", url: "https://github.com/honyanya/honyanya" },
     { name: "helloworld", url: "https://github.com/honyanya/helloworld" },
   ];
-  const list = repositories.map((repository) =>
-    <p>{repository.name} <a href={repository.url}>URL</a></p>
+  const list = repositories.map((repository, index) =>
+  <p key={index}>{repository.name} <a href={repository.url}>URL</a></p>
   );
 
   const newMesage = `Hello, ${props.message}!!`;
