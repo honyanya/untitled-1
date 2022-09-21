@@ -4,6 +4,6 @@ import Hello from '../Hello';
 
 test('renders "Untitled"', () => {
   render(<Hello message={"hello"} />);
-  const element = screen.getByText(/hello/i);
+  const element = screen.getByText(/Hello, hello/i);
   expect(element).toBeInTheDocument();
 });
