@@ -1,3 +1,4 @@
+import ApiRequest from '../components/ApiRequest';
 import Hello from '../components/Hello';
 
 function Page1() {
@@ -5,6 +6,7 @@ function Page1() {
     <div>
       <h2>Page1</h2>
       <Hello message="world" />
+      <ApiRequest />
     </div>
   );
 }
